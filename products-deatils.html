@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Product-Deatils</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"> <img src="images1/logo3.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="Account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"> <img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        
+    </div>
+    <!-- --------------------single Product deatil--------------- -->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images1/cp1.jpg" width="100%" id="productimg">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images1/cp1.jpg" width="100%" class="smallimg">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images1/cp2.jpg" width="100%" class="smallimg">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images1/cp3.jpg" width="100%" class="smallimg">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images1/cp4.jpg" width="100%" class="smallimg">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-2">
+                <p>Home / T-Shirt</p>
+                <h1>PrintOctopus Men's Classic Fit T-Shirt</h1>
+                <h4> Price:	₹ 465.80</h4>
+                <select>
+                    <option> Select Size</option>
+                    <option> XXL</option>
+                    <option> XL</option>
+                    <option> L</option>
+                    <option> M</option>
+                    <option> S</option>
+                </select>
+                <input type="number" value="1" > 
+                <a href="" class="btn">Add to cart</a> 
+
+                <h3>Product Deatils</h3><br>
+                <p>Care Instructions: Ensure washing the tee in cold water and don't dry in direct sunlight. Instructions are printed on the neck label for your convenience.
+                   <br> Fit Type: regular fit<br> 
+                    Fabric: 100% Cotton<br> 
+                    Style: Regular<br> 
+                    Neck Style: Round Neck<br> 
+                    Pattern: Solid</p>
+            </div>
+        </div>
+    </div>
+<!---------title---------->
+<div class="small-container">
+    <div class="row row-2">
+<h2>Related Products</h2>
+<p>View more</p>
+    </div>
+</div>
+
+  <!---------products---------->
+  <div class="small-container">
+    <div class="row">
+        <div class="col-4">
+            <img src="images1/product-2.jpg">
+            <h4>Blue Printed Tshirt</h4>
+            <p>₹ 590.80</p>
+        </div>
+        <div class="col-4">
+            <a href="products-deatils.html"> <img src="images1/cp1.jpg"></a>
+            <h4>Classic Fit T-Shirt</h4>
+            <p>₹ 460</p>
+        </div>
+        <div class="col-4">
+            <img src="images1/product-4.jpg">
+            <h4>Black Printed Tshirt</h4>
+            <p>₹ 650</p>
+        </div>
+        <div class="col-4">
+            <img src="images1/product-5.jpg">
+            <h4>Red Printed Tshirt</h4>
+            <p>₹ 480</p>
+        </div>
+    </div>
+</div>
+</div>
+ 
+<!---------Footer---------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+               <img src="images1/logo3.png" >
+                <p>Our perpose is to sustainably make the pleasure and benefits of sports accessiblevto the many</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>coupns</li>
+                    <li>Blog Post</li>
+                    <li>Return policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>INstagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright">Copyright 2021 - MN Company</p>
+    </div>
+</div>
+<!-- --------------------js for toggle menu------------- -->
+<script> var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle() {
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else{
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+<!-- --------------------product gallary------------- -->
+<script>
+    var productimg = document.getElementById("productimg");
+    var smallimg = document.getElementsByClassName("smallimg");
+    smallimg[0].onclick = function ()
+    {
+        productimg.src = smallimg[0].src;
+    }
+    smallimg[1].onclick = function ()
+    {
+        productimg.src = smallimg[1].src;
+    }
+    smallimg[2].onclick = function ()
+    {
+        productimg.src = smallimg[2].src;
+    }
+    smallimg[3].onclick = function ()
+    {
+        productimg.src = smallimg[3].src;
+    }
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redstore Ecommerce Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js"></script> -->
+</head>
+
+<body>
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"> <img src="images1/logo3.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="Account.html">Account</a></li>
+                </ul>
+            </nav>
+           <a href="cart.html"> <img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>The body achieves <br> what the mind believes!</h1>
+                <p>Success isn't always about greatness. It's about consistency. Consistent <br>hard work gains success. Greatness will come.
+                </p>
+                <a href="" class="btn">Explore Now &#8594</a>
+            </div>
+            <div class="col-2">
+                <img src="images1/home.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!---------featured categories---------->
+<div class="categories">
+    <h2>Featured Categories</h2>
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <img src="images1/Product-1.jpg">
+            </div>
+            <div class="col-3">
+                <img src="images1/category-2.jpg">
+            </div>
+            <div class="col-3">
+                <img src="images1/category-3.jpg">
+            </div>
+        </div>
+    </div>
+    <hr>
+</div>
+<!---------featured Products---------->
+<div class="small-container">
+    <h2>Featured Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="images1/product-2.jpg">
+            <h4>Blue Printed Tshirt</h4>
+            <p>₹ 590.80</p>
+        </div>
+        <div class="col-4">
+            <a href="products-deatils.html"> <img src="images1/cp1.jpg"></a>
+            <h4>Classic Fit T-Shirt</h4>
+            <p>₹ 460</p>
+        </div>
+        <div class="col-4">
+            <img src="images1/product-4.jpg">
+            <h4>Black Printed Tshirt</h4>
+            <p>₹ 650</p>
+        </div>
+        <div class="col-4">
+            <img src="images1/product-5.jpg">
+            <h4>Red Printed Tshirt</h4>
+            <p>₹ 480</p>
+        </div>
+    </div>
+</div>
+<!---------Offer---------->
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/exclusive.png" class="offer-img">
+            </div>
+            <div class="col-2">
+                <p>Exclusively Availabel on Redstore</p>
+                <h1>Smart Band 4</h1>
+                <small>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</small>
+                <div>
+                    <a href="" class="btn">Buy Now &#8594</a>
+                </div>
+               
+            </div>
+
+        </div>
+    </div>
+</div>
+<!---------Brands---------->
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+        <div class="col-5">
+            <img src="images/logo-oppo.png">
+        </div>
+<div class="col-5">
+    <img src="images/logo-godrej.png">
+</div>
+<div class="col-5">
+    <img src="images/logo-philips.png">
+</div>
+        </div>
+    </div>
+</div>
+<!---------Footer---------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+               <img src="images1/logo3.png" >
+                <p>Our perpose is to sustainably make the pleasure and benefits of sports accessiblevto the many</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>coupns</li>
+                    <li>Blog Post</li>
+                    <li>Return policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>INstagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright">Copyright 2021 - MN Company</p>
+    </div>
+</div>
+<!-- --------------------js for toggle menu------------- -->
+<script >
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle() {
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else{
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+</body>
+</html>
